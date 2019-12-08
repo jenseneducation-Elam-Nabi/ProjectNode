@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <link rel="stylesheet" href="/static/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon"
-        href="https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?cs=srgb&dl=multicolored-skull-decor-1918290.jpg&fm=jpg">
+    <link rel="icon" href="/static/img/illuminati.jpg" />
     <title>Contact</title>
 </head>
 
@@ -19,14 +18,26 @@
         <ul>
             <li><i class="fas fa-house-damage"></i><a href="/">Home</a></li>
             <li><i class="fas fa-address-card"></i><a href="/about">About</a></li>
-            <li><i class="fa fa-fw fa-envelope"></i><a href="/contact">Contact</a></li>
-            <li><i class="fas fa-file-signature"></i><a href="/signup">Sign Up</a></li>
-            <li><i class="fas fa-clipboard-check"></i><a href="/login">Login</a></li>
+            <li>
+                <i class="fa fa-fw fa-envelope"></i><a href="/contact">Contact</a>
+            </li>
+            <li>
+                <i class="fas fa-file-signature"></i><a href="/signup">Sign Up</a>
+            </li>
+            <li>
+                <i class="fas fa-clipboard-check"></i><a href="/login">Login</a>
+            </li>
+            <img class="logo" src="/static/img/logo.jpg" alt="logo" />
         </ul>
     </nav>
     <div class="wrapper">
+        <section class="contact-us">
+            <h1>
+                Feel free to <span>contact us</span>, for more information, about our
+                services!
+            </h1>
+        </section>
         <form>
-            <h2>Contact Us</h2>
             <input type="text" id="fname" name="firstname" placeholder="Your first name" />
             <div class="error"></div>
             <input type="text" id="lname" name="lastname" placeholder="Your last name" />
@@ -42,7 +53,7 @@
 
             <input type="submit" value="Send" />
         </form>
-    </div>
+        <script src="/static/script.js"></script>
 </body>
 
 </html>

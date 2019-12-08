@@ -1,11 +1,11 @@
 const express = require("express");
-const ejs = require("ejs");
 const app = express();
 
 PORT = 8080;
 
-app.use("/static", express.static("public"));
+
 app.set("view engine", "ejs");
+app.use("/static", express.static("public"));
 
 app.get("/", (req, res) => {
   res.render("homepage");
@@ -23,8 +23,8 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-app.get("/sucess", (req, res) => {
-  res.render("succes");
+app.get("/success", (req, res) => {
+  res.render("success");
 });
 
 app.get("/login", (req, res) => {
