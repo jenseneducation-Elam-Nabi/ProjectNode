@@ -94,11 +94,13 @@ body {
 
 .main-navbar {
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   font: 1.15em;
   position: fixed;
   background: rgb(10, 6, 6);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .homepage-pic {
@@ -207,7 +209,7 @@ p {
   display: flex;
 }
 
-.wrapper>div {
+.wrapper > div {
   margin: auto;
   color: #eda51a;
   font-size: 1.5rem;
@@ -258,7 +260,6 @@ input[type="submit"]:hover {
   justify-content: center;
   align-content: center;
   margin-top: 150px;
-
 }
 
 .wrapper-2 button {
@@ -276,7 +277,6 @@ input[type="submit"]:hover {
   border-bottom: none;
   border-right: 0.5px #f5d67b solid;
   padding: 10px;
-
 }
 
 .wrapper-2 label {
@@ -319,7 +319,6 @@ iframe {
 iframe {
   display: inline-block;
 }
-
 
 .contact-info li {
   list-style-type: none;
