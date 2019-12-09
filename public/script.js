@@ -45,7 +45,7 @@ function validateForm(e) {
                     error = true;
                 }
             }
-            if (fieldName == "password") {
+            if (fieldName === "password") {
                 let exp = /[A-Za-z0-9]+$/;
                 let result = exp.test(input.value);
                 if (!result) {
@@ -56,19 +56,15 @@ function validateForm(e) {
                     addError(input, "Needs to be between 3-8 characters", fieldName);
                     error = true;
                 }
-                if (fieldName == "password" != "password-confirm") {
-                    let exp = /[A-Za-z0-9]+$/;
-                    let result = exp.test(input.value);
-                    if (!result) {
-                        addError(input, "Only numbers and Letters", fieldName);
-                        error = true;
-                    }
-                    if (!(input.value.length > 3 && input.value.length < 9)) {
-                        addError(input, "Needs to be between 3-8 characters", fieldName);
-                        error = true;
-                    }
 
+            } else if (fieldName === 'passwordConfirm') {
+                let passwordField = document.querySelector('#password')
+                let confirmPasswordField = document.querySelector('#passwordConfirm')
+                if (passwordField.value !== confirmPasswordField.value) {
+                    addError(input, "didn't match...", fieldName);
+                    error = true;
                 }
+
             }
             data[fieldName] = input.value;
         }
