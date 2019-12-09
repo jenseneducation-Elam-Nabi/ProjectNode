@@ -31,4 +31,4 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-app.listen(PORT);
+app.listen(PORT, () => console.log(`Server is running on Localhost:${PORT}...`));

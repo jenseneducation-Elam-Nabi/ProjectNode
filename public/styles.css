@@ -209,7 +209,7 @@ p {
   display: flex;
 }
 
-.wrapper > div {
+.wrapper>div {
   margin: auto;
   color: #eda51a;
   font-size: 1.5rem;
@@ -315,7 +315,6 @@ iframe {
   margin-bottom: -3rem;
 }
 
-.contact-info,
 iframe {
   display: inline-block;
 }
